@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9f7a8e5-daba-428f-baf1-0cc218d1a3a6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Baca8.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source.java" afterDir="false" />
+    <list default="true" id="b9f7a8e5-daba-428f-baf1-0cc218d1a3a6" name="Changes" comment="Fundamenty">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,8 +53,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1652625286668</updated>
-      <workItem from="1652625289405" duration="3678000" />
+      <workItem from="1652625289405" duration="5959000" />
     </task>
+    <task id="LOCAL-00001" summary="Fundamenty">
+      <created>1652629021250</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1652629021250</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -74,5 +78,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fundamenty" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fundamenty" />
   </component>
 </project>

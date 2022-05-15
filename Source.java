@@ -29,12 +29,18 @@ interface Porzadek{
 class Rosnacy implements Porzadek{
     @Override
     public boolean wPorzadku(int pierwsza, int druga){
-        return  pierwsza < druga;
+        return  pierwsza <= druga;
     }
 
 }
 /*-----------Selekcja----------------*/
 class Selekcja{
+    /*-------- Baza rekrencji---------*/
+    private int p;
+
+    /**Konstruktor*/
+    public Selekcja(int p){ this.p = p; }
+
     /**Dzielenie Lomuto*/
     private int dziel(int[] tablica,int lewy, int prawy, Porzadek porzadek){
         int i = lewy-1, pivot = tablica[prawy], tymczasowy;
@@ -49,6 +55,41 @@ class Selekcja{
         tablica[prawy] = tablica[i+1];
         tablica[i+1] = pivot;
         return i+1;
+    }
+
+    /**Sortowanie prosty wyborem*/
+    public void sortuj(int[] tablica, int lewy, int prawy, Porzadek porzadek){
+        int i, pivot , j, temp;
+        for(i = lewy ; i < prawy; i++){
+            pivot = i;
+            for(j = i+1; j<prawy+1;j++){
+                if(porzadek.wPorzadku(tablica[j],tablica[pivot])) pivot = j;
+            }
+            temp = tablica[pivot];
+            tablica[pivot] = tablica[i];
+            tablica[i] = temp;
+        }
+    }
+
+    public int selekcja(int[] tablica, int lewy, int prawy,
+                        int k, Porzadek porzadek){
+
+        /*Warunek stopu*/
+        if(prawy - lewy < p){
+            sortuj(tablica, lewy, prawy, porzadek);
+            return tablica[k];//Zwroc k-ty element
+        }
+
+        /*Podziel zbior na 5 elementowe pozbiory,
+        posortuj osobno*/
+        int i;
+        for (i = 0; i < tablica.length+5; i++) {
+            sortuj(tablica, i, i +5, porzadek);
+        }
+        sortuj(tablica, i+5, tablica.length-1,porzadek);
+
+        /*Wyznacz zbior median pozbiorow*/
+
     }
 }
 
@@ -83,14 +124,28 @@ final class Zestaw{
 /**------------------Program-------------------------*/
 public class Source {
 
+    static public void display(int[] tablica){
+        for (int i = 0; i < tablica.length; i++) {
+            System.out.print(tablica[i] + " ");
+        }
+        System.out.print("\n");
+    }
     /**Wejscie do programu*/
     public static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args){
+        Selekcja selekcja = new Selekcja();
+        Rosnacy rosnacy = new Rosnacy();
+
         int iloscZestawow = sc.nextInt();
         Zestaw zestaw;
         for (int i = 0; i < iloscZestawow; i++) {
             zestaw = new Zestaw(sc);
         }
+
+        /*int[] t = {2,7,4,8,5,9};
+        selekcja.sortuj(t,0, t.length -1,rosnacy);
+        display(t);*/
+
     }
 }
