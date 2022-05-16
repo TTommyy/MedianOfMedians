@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9f7a8e5-daba-428f-baf1-0cc218d1a3a6" name="Changes" comment="Fundamenty">
+    <list default="true" id="b9f7a8e5-daba-428f-baf1-0cc218d1a3a6" name="Changes" comment="Dziala!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source.java" afterDir="false" />
     </list>
@@ -29,13 +29,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Standard" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Source" />
@@ -53,7 +54,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1652625286668</updated>
-      <workItem from="1652625289405" duration="5959000" />
+      <workItem from="1652625289405" duration="16176000" />
+      <workItem from="1652691735455" duration="8911000" />
     </task>
     <task id="LOCAL-00001" summary="Fundamenty">
       <created>1652629021250</created>
@@ -62,7 +64,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652629021250</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fundamenty">
+      <created>1652639562991</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1652639562991</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -81,6 +90,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fundamenty" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fundamenty" />
+    <MESSAGE value="Dziala!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dziala!" />
   </component>
 </project>
